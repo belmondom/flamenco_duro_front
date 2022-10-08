@@ -1,0 +1,21 @@
+<div class="enunciado">
+    <h1 class=""><strong>Usuarios administradores</strong></h1>
+  </div>
+
+<table class="table table-striped">
+    <thead class="table-success">
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{usuario.nombre}}</td>
+        <td>{{usuario.email}}</td>
+        <td>{{usuario.createAt}}</td>
+      </tr>
+  </table>
+
+  

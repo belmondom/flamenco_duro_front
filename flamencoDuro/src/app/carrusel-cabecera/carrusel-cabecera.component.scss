@@ -1,0 +1,21 @@
+.img-carrusel{
+    object-fit: cover;
+    height: 100vh;
+}
+
+/* Posiciona el logo y el menu encima de las imagenes del carrusel */
+.contenedor{
+    position: relative;
+
+    .menu-carrusel{
+        width: 100%;
+        position: absolute; 
+        top:20px;
+    }
+}
+
+
+
+
+
+
