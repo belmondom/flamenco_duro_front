@@ -1,0 +1,28 @@
+<app-cabecera-general></app-cabecera-general>
+
+<div class="enunciado">
+  <h3 class=""><strong>{{titulo}} usuarios administradores</strong></h3>
+</div>
+
+<div class="contenedor d-flex justify-content-center my-5">
+  <div class="formulario">
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" [(ngModel)]="usuario.nombre" name="nombre" aria-describedby="emailHelp">
+        <div id="nombreHelp" class="form-text">Introduzca su nombre</div>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="usuario.email" name="email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Introduzca su dirección de email</div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" [(ngModel)]="usuario.password" name="password">
+        <div id="passwordHelp" class="form-text">No revele nunca su contraseña</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Crear</button>
+    </form>
+  </div>
+</div>
