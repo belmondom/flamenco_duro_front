@@ -1,16 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 
-// Fuente para toda la web
-body{
-    font-family: 'Rajdhani', sans-serif;
+// Fuente Metal Lord (Iron Maiden) importada localmente
+@font-face {
+    font-family: 'metal-lord';
+    src: url('/assets/fuentes/metal-lord.ttf')
 }
 
+// Fuente principal de toda la web
+body{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+}
+
+// Enunciados de las paginas y secciones
 .enunciado{
-    background-color: #d1e7dd;
+    background-color: #e5e7e6;
     text-align: center;
     padding: 10px;
     margin: 10px  0;
     border-top: 1px solid #bcd0c7;
     border-bottom: 1px solid #bcd0c7;
-    color: #635c5c;
+    color: #538aac;
+    text-shadow: 2px 2px 4px rgba(83, 83, 83, 0.6);
+    // font-family: 'metal-lord', 'Rajdhani', sans-serif;
 }

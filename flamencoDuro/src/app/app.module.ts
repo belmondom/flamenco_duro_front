@@ -7,6 +7,11 @@ import { CarruselCabeceraComponent } from './carrusel-cabecera/carrusel-cabecera
 import { MenuCarruselComponent } from './carrusel-cabecera/menu-carrusel/menu-carrusel.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CabeceraGeneralComponent } from './cabecera-general/cabecera-general.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormularioUsuariosComponent } from './formulario-usuarios/formulario-usuarios.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,12 +20,17 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     CarruselCabeceraComponent,
     MenuCarruselComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    CabeceraGeneralComponent,
+    FooterComponent,
+    FormularioUsuariosComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

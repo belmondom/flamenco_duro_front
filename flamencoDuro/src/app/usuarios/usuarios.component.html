@@ -1,5 +1,7 @@
+<app-cabecera-general></app-cabecera-general>
+
 <div class="enunciado">
-    <h1 class=""><strong>Usuarios administradores</strong></h1>
+    <h3 class=""><strong>Usuarios administradores</strong></h3>
   </div>
 
 <table class="table table-striped">
@@ -7,6 +9,7 @@
       <tr>
         <th scope="col">Nombre</th>
         <th scope="col">Email</th>
+        <th scope="col">Contraseña</th>
         <th scope="col">Fecha</th>
       </tr>
     </thead>
@@ -14,6 +17,7 @@
       <tr *ngFor="let usuario of usuarios">
         <td>{{usuario.nombre}}</td>
         <td>{{usuario.email}}</td>
+        <td>{{usuario.password}}</td>
         <td>{{usuario.createAt}}</td>
       </tr>
   </table>
